@@ -1,21 +1,35 @@
 package calculator.parsers;
 
-import calculator.CalculationOperations;
 import calculator.exceptions.ErrorInputException;
 
-public class UserInputParser implements InputParser{
-    public static void parseExpression(String input) {
+public class UserInputParser implements InputParser {
+    final private String ADDITION = "+";
+    final private String SUBTRACTION = "-";
+    final private String MULTIPLY = "*";
+    final private String DIVISION = "/";
 
+    public String[] parseExpression(String input) {
+        if (input.equals(null) || input.equals("")) {
+            throw new ErrorInputException("Input can't be empty!");
+        }
+        String[] expression = checkInputs(input.split(" "));
+        return expression;
+    }
+
+    public String[] checkInputs(String[] userInput) {
+
+
+        if (userInput.length != 3) {
+            throw new ErrorInputException("Incorrect number of input data!!!");
+        }
         try {
-            String[] expression = input.split(" ");
-            if (expression.length != 3) {
-                throw new ErrorInputException("Wrong Input!!!");
-            }
-            CalculationOperations calculationOperations = new CalculationOperations();
-            System.out.println(calculationOperations.calculate(Double.parseDouble(expression[0]), expression[1], Double.parseDouble(expression[2])));
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+
+            Double.parseDouble(userInput[0]);
+            Double.parseDouble(userInput[2]);
+        } catch (NumberFormatException nfe) {
+            throw new ErrorInputException("Wrong inputs: " + nfe.getMessage());
         }
 
+        return userInput;
     }
 }
