@@ -6,7 +6,7 @@ import calculator.operations.Operation;
 import calculator.operations.OperationFactory;
 import calculator.parsers.UserInputParser;
 
-public class CalculationIterator implements UserInputIterator {
+public class CalculationIterator implements Iterator {
     private boolean iterate = true;
 
     @Override

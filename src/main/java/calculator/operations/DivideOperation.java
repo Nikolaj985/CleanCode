@@ -1,6 +1,6 @@
 package calculator.operations;
 
-public class DivOperation implements Operation {
+public class DivideOperation implements Operation {
 
     @Override
     public double calculate(double first, double second) {

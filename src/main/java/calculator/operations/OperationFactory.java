@@ -14,11 +14,11 @@ public class OperationFactory {
             case ADDITION:
                 return new AddOperation();
             case SUBTRACTION:
-                return new SubOperation();
+                return new SubtractOperation();
             case MULTIPLY:
-                return new MultOperation();
+                return new MultiplyOperation();
             case DIVISION:
-                return new DivOperation();
+                return new DivideOperation();
         }
         throw new ErrorInputException("Wrong operational input");
     }

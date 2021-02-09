@@ -27,6 +27,7 @@ public class UserInputParser implements InputParser {
 
             Double.parseDouble(userInput[0]);
             Double.parseDouble(userInput[2]);
+
         } catch (NumberFormatException nfe) {
             throw new ErrorInputException("Wrong inputs: " + nfe.getMessage());
         }

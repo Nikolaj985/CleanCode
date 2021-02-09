@@ -1,8 +1,9 @@
 package calculator.operations;
 
-public class SubOperation implements Operation {
+public class MultiplyOperation implements Operation {
+
     @Override
     public double calculate(double first, double second) {
-        return first - second;
+        return first * second;
     }
 }
