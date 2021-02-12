@@ -13,13 +13,7 @@ public class UserInputParser implements InputParser {
         if (!StringUtils.isNotBlank(input) || !StringUtils.isNotEmpty(input)) {
             throw new ErrorInputException("Input can't be empty!");
         }
-        String[] expression = checkInputs(input.split(" "));
-        return expression;
-    }
-
-    public String[] checkInputs(String[] userInput) {
-
-
+        String[] userInput = input.split(" ");
         if (userInput.length != 3) {
             throw new ErrorInputException("Incorrect number of input data!!!");
         }
@@ -34,4 +28,6 @@ public class UserInputParser implements InputParser {
 
         return userInput;
     }
+
+
 }

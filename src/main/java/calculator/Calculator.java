@@ -1,6 +1,6 @@
 package calculator;
 
-import calculator.iterator.CalculationIterator;
+import calculator.iterator.ConsoleUserInputReader;
 
 
 /**
@@ -10,7 +10,7 @@ public class Calculator {
 
     public static void main(String[] args) {
 
-        CalculationIterator calculationIterator = new CalculationIterator();
+        ConsoleUserInputReader calculationIterator = new ConsoleUserInputReader();
         calculationIterator.startCalculation();
     }
 }

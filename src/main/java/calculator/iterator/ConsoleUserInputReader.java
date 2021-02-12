@@ -4,9 +4,10 @@ import calculator.exceptions.ErrorInputException;
 import calculator.inputreader.ReadUserInput;
 import calculator.operations.Operation;
 import calculator.operations.OperationFactory;
+import calculator.output.DataOutput;
 import calculator.parsers.UserInputParser;
 
-public class CalculationIterator implements Iterator {
+public class ConsoleUserInputReader implements Iterator {
     private boolean iterate = true;
 
     @Override
@@ -21,9 +22,9 @@ public class CalculationIterator implements Iterator {
                 Operation operation = new OperationFactory().getOperation(parsedInput[1]);
                 System.out.println(operation.calculate(Double.parseDouble(parsedInput[0]), Double.parseDouble(parsedInput[2])));
             } catch (ErrorInputException | IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+                DataOutput.outputData(e.getMessage());
             } catch (Exception ex) {
-                System.out.println(ex.getMessage());
+                DataOutput.outputData(ex.getMessage());
             }
             iterate = calcAgain();
         }
