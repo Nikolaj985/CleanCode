@@ -1,0 +1,23 @@
+[33mcommit 4a5ca6d2da506c809af0363888880d39b85b7176[m[33m ([m[1;36mHEAD -> [m[1;32mcorrectionbranch[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/correctionbranch[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Nikolaj Grigorjev <grigorjev.nikolaj@gmail.com>
+Date:   Tue Feb 9 13:05:45 2021 +0200
+
+    fourth commit NamingIssues
+
+[33mcommit 872eb6c4ece912f608250775aba455d47b25c909[m
+Author: Nikolaj Grigorjev <grigorjev.nikolaj@gmail.com>
+Date:   Tue Feb 9 12:52:17 2021 +0200
+
+    third commit StringUtils
+
+[33mcommit afc10d88675d5d6b9a753d3e62f203bc3742e0fa[m
+Author: Nikolaj Grigorjev <grigorjev.nikolaj@gmail.com>
+Date:   Tue Feb 9 12:10:00 2021 +0200
+
+    second commit Factory Pattern
+
+[33mcommit 2410d62194f1827fb246b4a96f07ac234733e923[m
+Author: Nikolaj Grigorjev <grigorjev.nikolaj@gmail.com>
+Date:   Tue Feb 9 09:27:30 2021 +0200
+
+    first commit
